@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,700;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Urbanist, Arial, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0px 0px 25px hsl(180, 18%, 25%);
+    background: no-repeat center center fixed; 
+    background-size: cover;
+}
+
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h1, 
+#crypto,
+#weather,
+#creator {
+    padding: 0.5rem 1rem;
+}
+
+/*--------------TOP ROW---------------*/
+
+#top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#crypto {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#crypto-name {
+    display: flex;
+    align-items: center;
+}
+
+#crypto-name p {
+    margin-left: 1rem;
+}
+
+#crypto-data {
+    color: greenyellow;
+    font-size: smaller;
+}
+
+#weather {
+    font-size: 2rem;
+    color:hsl(65, 62%, 85%);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#loc {
+    position: relative;
+    top: -1rem;
+}
+
+/*--------------MIDDLE ROW---------------*/
+#center {
+    width: 80%;
+    max-width: 350px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: -2rem;
+}
+
+#search {
+    width: 100%;
+}
+
+#searchbox {
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+#time {
+    text-align: flex-start;
+    margin-left: 0;
+    padding-left: 0.1rem;
+}
+
+/*--------------BOTTOM ROW---------------*/
+
+#creator {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+}
